@@ -1,30 +1,19 @@
 function salvarNome(){
-    localStorage.setItem("nome", document.querySelector("#nome").value);
+    localStorage.nome = document.querySelector("#nome").value;
 }
 
-function recuperarNome(){
-    document.querySelector("#nome").value = localStorage.getItem("nome");
-}
 function salvarSobreNome(){
-    localStorage.setItem("sobrenome", document.querySelector("#sobrenome").value);
-}
-function recuperaSobrenome(){
-    document.querySelector("#sobrenome").value = localStorage.getItem("sobrenome");
+    localStorage.sobrenome = document.querySelector("#sobrenome").value;
 }
 
 function salvarNumero(){
-    localStorage.setItem("numero", document.querySelector("#numero").value);
+    localStorage.numero = document.querySelector("#numero").value;
 }
 
-function recuperarNumero(){
-    document.querySelector("#numero").value = localStorage.getItem("numero");
-}
 function salvarNumero2(){
-    localStorage.setItem("numero-2", document.querySelector("#numero-2").value);
+    localStorage.numero2 = document.querySelector("#numero-2").value;
 }
-function recuperaNumero2(){
-    document.querySelector("#numero-2").value = localStorage.getItem("numero-2");
-}
+
 
 function coletarDadosA(){
     salvarNome();
@@ -34,13 +23,17 @@ function coletarDadosB(){
     salvarSobreNome();
     salvarNumero2();
 }
-function recuperarDados(){
 
-    let recuperarNomeCompleto = {
-
-        nomeCompleto:(recuperarNome(this) + "" + recuperaSobrenome(this)),
-    
+function recuperarDados() {
+        document.querySelector(this);
+      }
+      
+    let dados = {
+        nomeCompleto: document.querySelector("#ncompleto").innerHTML = "Nome Completo: " + localStorage.nome +" "+ localStorage.sobrenome,
+        multiplicacao: document.querySelector("#multiplicacao").innerHTML = "A multiplicação dos Numeros digitados é: " + localStorage.numero * localStorage.numero2,
     }
-    nomeCompleto();
-    
-}
+
+
+let mostrarDados = recuperarDados.bind(dados);
+mostrarDados()
+
