@@ -1,0 +1,21 @@
+.container {
+    padding-top: 130px;
+    padding-bottom: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns:  2fr;
+    align-items: center;
+    gap: 40px;
+
+}
+form {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+form input, button{
+    display: block;
+}
