@@ -32,12 +32,27 @@
       <div class= "grid" style="--bs-columns :12">
         <div class="g-col-8">
             <h2 class="tituloform">Recuperar Dados</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Dados Digitados</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Nome Completo:</th>
+                  <td><p id="ncompleto"></p></td>
+                </tr>
+                <tr>
+                  <th scope="row">Multiplicacao:</th>
+                  <td><p id="multiplicacao"></p></td>
+                </tr>
+              </tbody>
+            </table>
             <p>
-              <input onclick="mostrarDados()" class="enviar" type="submit" id="enviar" value="enviar">
+              <button onclick="recuperarDados()" type="submit">Recuperar</button>
             </p>
-            <p id="titulo"></p>
-            <p id="ncompleto"></p>
-            <p id="multiplicacao"></p>
         </div>
       </div>
     </div>
