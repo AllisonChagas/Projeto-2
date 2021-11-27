@@ -25,15 +25,11 @@ function coletarDadosB(){
 }
 
 function recuperarDados() {
-        document.querySelector(this);
+
+    let nomeCompleto =  document.querySelector("#ncompleto").innerHTML = "Nome Completo: " + localStorage.nome +" "+ localStorage.sobrenome;
+    let sobreNome = document.querySelector("#multiplicacao").innerHTML = "A multiplicação dos Numeros digitados é: " + localStorage.numero * localStorage.numero2;
+    
+    if ((localStorage.nome & localStorage.sobrenome) & ( localStorage.numero & localStorage.numero2))
+        document.getElementById("#ncompleto").value = nomeCompleto;
+        document.getElementById("#multiplcacao").value =  sobreNome;
       }
-      
-    let dados = {
-        nomeCompleto: document.querySelector("#ncompleto").innerHTML = "Nome Completo: " + localStorage.nome +" "+ localStorage.sobrenome,
-        multiplicacao: document.querySelector("#multiplicacao").innerHTML = "A multiplicação dos Numeros digitados é: " + localStorage.numero * localStorage.numero2,
-    }
-
-
-let mostrarDados = recuperarDados.bind(dados);
-mostrarDados()
-
